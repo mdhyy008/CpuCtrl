@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/cardView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				app:cardCornerRadius="10dp"
+				android:onClick="cpuinfo">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:background="?android:attr/selectableItemBackgroundBorderless"
+					android:layout_centerInParent="true">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:background="#e5e5e5"
+						android:padding="5dp"
+						android:textStyle="bold"
+						android:layout_height="wrap_content"
+						android:text="CPU信息"
+						android:textColor="#000000"
+						android:id="@+id/main_activityTextView0"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:text="总核心数:"
+						android:id="@+id/main_activityTextView"
+						android:layout_margin="7dp"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/cardView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				app:cardCornerRadius="10dp"
+				android:onClick="cpuctrl">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:background="?android:attr/selectableItemBackgroundBorderless"
+					android:layout_centerInParent="true">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:background="#e5e5e5"
+						android:padding="5dp"
+						android:textStyle="bold"
+						android:layout_height="wrap_content"
+						android:text="CPU实时频率"
+						android:textColor="#000000"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:text="cpu 频率"
+						android:id="@+id/main_activityTextView1"
+						android:layout_margin="7dp"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				app:cardCornerRadius="10dp">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:background="?android:attr/selectableItemBackgroundBorderless"
+					android:layout_centerInParent="true">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:background="#e5e5e5"
+						android:padding="5dp"
+						android:textStyle="bold"
+						android:layout_height="wrap_content"
+						android:text="CPU微调"
+						android:textColor="#000000"/>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="above_hispeed_delay"/>		
+					<EditText
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:hint="above_hispeed_delay"
+						android:id="@+id/main_activityEditText1"
+						/>
+				
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="boostpulse_duration"/>		
+					<EditText
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:hint="boostpulse_duration"
+						android:id="@+id/main_activityEditText2"
+					/>
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="go_hispeed_load"/>		
+					<EditText
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:hint="go_hispeed_load"
+						android:id="@+id/main_activityEditText3"
+					/>
+				
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+					android:text="hispeed_freq"/>		
+					<EditText
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:hint="hispeed_freq"
+						android:id="@+id/main_activityEditText4"
+					/>
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="min_sample_time"/>		
+					<EditText
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:hint="min_sample_time"
+						android:id="@+id/main_activityEditText5"
+					/>
+					
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="target_loads"/>		
+					<EditText
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:hint="target_loads"
+						android:id="@+id/main_activityEditText6"
+					/>
+					<TextView
+						android:layout_width="match_parent"
+						android:background="#F33F77"
+						android:padding="10dp"
+						android:gravity="center"
+						android:textStyle="bold"
+						android:layout_height="wrap_content"
+						android:text="高通625一键调教♂"
+						android:textColor="#FFFFFF"
+						android:onClick="cpuInfo_625"
+					/>
+					<TextView
+						android:layout_width="match_parent"
+						android:background="#F33F77"
+						android:padding="10dp"
+						android:gravity="center"
+						android:textStyle="bold"
+						android:layout_marginTop="1dp"
+						android:layout_height="wrap_content"
+						android:text="保存配置"
+						android:textColor="#FFFFFF"
+						android:onClick="saveCpuInfo"
+						/>
+					
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+			
+		</LinearLayout>
+
+	</ScrollView>
+
+</RelativeLayout>
+
